@@ -1,0 +1,9 @@
+system.admin_config_icheck:
+  route_name: system.admin_config_icheck
+  parent: system.admin_config
+  title: icheck
+admin.icheck.settings_form:
+  title: 'icheck'
+  description: 'icheck setting page'
+  parent: system.admin_config_icheck
+  route_name: admin.icheck.settings_form

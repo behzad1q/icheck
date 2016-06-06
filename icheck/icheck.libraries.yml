@@ -1,0 +1,225 @@
+icheck_library_polaris_polaris:
+  css:
+    theme:
+      /libraries/iCheck/skins/polaris/polaris.css: {}
+
+icheck_library_futurico_futurico:
+  css:
+    theme:
+      /libraries/iCheck/skins/futurico/futurico.css: {}
+
+icheck_library_flat_aero:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/aero.css: {}
+
+icheck_library_flat_blue:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/blue.css: {}
+
+icheck_library_flat_flat:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/flat.css: {}
+
+icheck_library_flat_green:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/green.css: {}
+
+icheck_library_flat_purple:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/purple.css: {}
+
+icheck_library_flat_pink:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/pink.css: {}
+
+icheck_library_flat_grey:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/grey.css: {}
+
+icheck_library_flat_orange:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/orange.css: {}
+
+icheck_library_flat_yellow:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/yellow.css: {}
+
+icheck_library_flat_red:
+  css:
+    theme:
+      /libraries/iCheck/skins/flat/red.css: {}
+
+#Square
+icheck_library_square_aero:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/aero.css: {}
+
+icheck_library_square_blue:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/blue.css: {}
+
+icheck_library_square_flat:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/flat.css: {}
+
+icheck_library_square_green:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/green.css: {}
+
+icheck_library_square_purple:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/purple.css: {}
+
+icheck_library_square_pink:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/pink.css: {}
+
+icheck_library_square_grey:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/grey.css: {}
+
+icheck_library_square_orange:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/orange.css: {}
+
+icheck_library_square_yellow:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/yellow.css: {}
+
+icheck_library_square_red:
+  css:
+    theme:
+      /libraries/iCheck/skins/square/red.css: {}
+
+#Minimal
+icheck_library_minimal_aero:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/aero.css: {}
+
+icheck_library_minimal_blue:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/blue.css: {}
+
+icheck_library_minimal_flat:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/flat.css: {}
+
+icheck_library_minimal_green:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/green.css: {}
+
+icheck_library_minimal_purple:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/purple.css: {}
+
+icheck_library_minimal_pink:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/pink.css: {}
+
+icheck_library_minimal_grey:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/grey.css: {}
+
+icheck_library_minimal_orange:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/orange.css: {}
+
+icheck_library_minimal_yellow:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/yellow.css: {}
+
+icheck_library_minimal_red:
+  css:
+    theme:
+      /libraries/iCheck/skins/minimal/red.css: {}
+
+
+#Line
+icheck_library_line_aero:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/aero.css: {}
+
+icheck_library_line_blue:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/blue.css: {}
+
+icheck_library_line_flat:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/flat.css: {}
+
+icheck_library_line_green:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/green.css: {}
+
+icheck_library_line_purple:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/purple.css: {}
+
+icheck_library_line_pink:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/pink.css: {}
+
+icheck_library_line_grey:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/grey.css: {}
+
+icheck_library_line_orange:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/orange.css: {}
+
+icheck_library_line_yellow:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/yellow.css: {}
+
+icheck_library_line_red:
+  css:
+    theme:
+      /libraries/iCheck/skins/line/red.css: {}
+
+
+icheck_js_file:
+  js:
+    js/icheck.js: {}
+    /libraries/iCheck/icheck.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.vertical-tabs
+    - core/drupalSettings

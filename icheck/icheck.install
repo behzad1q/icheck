@@ -1,0 +1,71 @@
+<?php
+
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_requirements().
+ */
+function icheck_requirements($phase) {
+  $requirements = array();
+  // Ensure translations do not break at install time
+
+  if ($phase == 'runtime') {
+    // List of libraries to loop
+    $indexes = array(
+      'icheck' => array(
+        'name' => 'iCheck',
+        'folder' => 'iCheck',
+        'min' => '1.0.2', // @todo - not tested with older version or v2.0 beta.
+      ),
+    );
+
+    foreach ($indexes as $key => $index) {
+      $library = libraries_detect($index['name']);
+
+      if (empty($library['installed'])) {
+        // Library is not installed
+        $url = Url::fromUri($library['download url']);
+        $requirements[$key] = array(
+          'title' => t('icheck'),
+          'value' => t('At least 1.0.2'),
+          'severity' => REQUIREMENT_ERROR,
+          'description' => t('In oder to use checkboxes and radio buttons from '
+              . 'icheck, you need to download the !library, extract the archive, '
+              . 'rename and place the !folder directory '
+              . 'in the %path directory on your server.', array(
+            '!library' => \Drupal::l(t($library['name']), $url),
+            '!folder' => $index['folder'],
+            '%path' => 'libraries'
+              )
+          ),
+        );
+      } elseif (version_compare($library['version'], $index['min'], '>=')) {
+        // Library is in correct version
+        $requirements[$key] = array(
+          'title' => t($library['name']),
+          'severity' => REQUIREMENT_OK,
+          'value' => $library['version'],
+        );
+      } else {
+        // Library is not in correct version
+        $url = Url::fromUri($library['download url']);
+        $requirements[$key] = array(
+          'title' => t('icheck'),
+          'value' => t('At least 1.0.2'),
+          'severity' => REQUIREMENT_ERROR,
+          'description' => t('In oder to use checkboxes and radio buttons from '
+              . 'icheck, you need to download a later version of the !library, '
+              . 'extract the archive, rename and replace the old version '
+             . 'located in the %path directory on your server.', array(
+            '!library' => \Drupal::l(t($library['name']), $url),
+            '%path' => $library['library path']
+             )
+          ),
+        );
+      }
+    }
+  }
+
+  return $requirements;
+}

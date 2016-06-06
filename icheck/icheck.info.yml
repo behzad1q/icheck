@@ -1,0 +1,7 @@
+name: iCheck Integration
+description: Integrate iCheck library to drupal form api.
+type: module
+version: 1.0
+core: 8.x
+dependencies:
+  - libraries:libraries
